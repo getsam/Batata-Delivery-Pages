@@ -68,7 +68,7 @@
                                 </div>
                         </div>
                 </div>
-    <div class="row border-bottom" style=" padding-left: 150px; padding-right: 150px; ">
+    <div class="row border-bottom" >
         <!-- envelope do Conteúdo das views     -->
             
                     <div class="ibox-content m-b-lg">
@@ -77,27 +77,23 @@
                             </h2>
                             
                             <!-- formulario de cadastro método Wizard -->
-                            <form id="form-cadastro" action="cadUsuario.php" class="wizard-big" method="POST">
-                                <h1>Informações Básicas</h1>
+                            <form id="form-cadastro" class="wizard-big" method="POST">
+                                <h1>Informações da batata</h1>
                                 <!-- dados básico -->
                                 <fieldset>
-                                    <h3 class="font-bold text-uppercase text-center">Informações cadastrais</h3>
+                                    <h3 class="font-bold text-uppercase text-center">Informações do pedido</h3>
                                     
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="label-control" for="cpf_cadastro">CPF/CNPJ</label>
-                                                <input type="text" placeholder="Ex. 99.999.999-99" class="form-control cpfCnpj" id="cpf_cadastro" name="cpf_cadastro" minlength="14" required >
-                                            </div>
-                                        </div>
-
+        
                                         <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <label class="label-control" for="tipoPessoa_cadastro">Tipo Pessoa</label>
-                                                    <select class="form-control m-b" id="tipoPessoa_cadastro" name="tipoPessoa_cadastro"   disabled>
-                                                        <option value="">Tipo de Documento</option>
-                                                        <option value="1">Pessoa Fisíca</option>
-                                                        <option value="2">Pessoa Juridíca</option>
+                                                    <label class="label-control" for="tipoPessoa_cadastro">Tipo Batata</label>
+                                                    <select class="form-control m-b" id="tipoPessoa_cadastro" name="tipoPessoa_cadastro">
+                                                        <option selected value="">Selecione..</option>
+                                                        <option value="">Cheddar</option>
+                                                        <option value="1">Bacon</option>
+                                                        <option value="2">Cheddar Bacon</option>    
+                                                        <option value="2">Normal</option>
                                                     </select> 
                                                 </div>
                                             </div>
@@ -108,43 +104,30 @@
                                                 <input type="text" placeholder="Ex. João da Silva" class="form-control " id="nome_cadastro" name="nome_cadastro" required >
                                             </div>
                                         </div>
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="form-group" id="data_1">
-                                                <label class="label-control" for="dt_nascimento">Nascimento/Abertura</label>
-                                                <div class="input-group date">
-                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" id="nascimento_cadastro" name="nascimento_cadastro" value="01/01/1900" >
-                                                </div>
-                                            </div>
-                                        </div>
+
                                         
                                         <div class="col-sm-6">
                                             <div class="form-group" id="genero">
-                                                <label class="label-control" for="sexo_cadastro">Gênero</label>
+                                                <label class="label-control" for="sexo_cadastro">CPF</label>
                                                 <select class="form-control m-b" name="sexo_cadastro" id="sexo_cadastro" required>
                                                     <option value="">Selecione</option>
-                                                    <option value="1">Masculino</option>
-                                                    <option value="2">Feminino</option>
-                                                    <option value="3">Indefinido</option>
+                                                    <option value="3">767.655.457-54</option>
+                                                    <option value="3">987.365.576-64</option>
+                                                    <option value="3">434.345.534-54</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group hide" id="porte">
-                                                    <label class="label-control" for="porte_cadastro">Porte</label>
-                                                    <select class="form-control m-b"name="porte_cadastro" id="porte_cadastro" required>
-                                                        <option value="">Selecione</option>
-                                                        <option value="1">MEI</option>
-                                                        <option value="2">Microempresa</option>
-                                                        <option value="3">Pequena</option>
-                                                        <option value="4">Médio</option>
-                                                        <option value="5">Grande</option>
-                                                    </select>                                        
+                                            <div class="col-sm-12">
+                                                <div class="form-group" required>
+                                                    <label class="label-control" for="nome_cadastro">Nome Cliente</label>
+                                                    <input type="text" placeholder="Ex. João da Silva" class="form-control " id="nome_cadastro" name="nome_cadastro" required >
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </fieldset> <!-- FIM - dados básico -->
 
                                 <!-- Dados de contato -->
-                                <h1>Informações de Contato</h1>
+                                <h1>Adicionais</h1>
                                 <fieldset>
                                     <h3 class="font-bold text-uppercase text-center">Endereço</h3>
                                     <div class="row m-b-sm">
@@ -258,7 +241,7 @@
                                     </div>
                                 </fieldset><!-- FIM - dados de contato -->
 
-                                <h1>Informações de Acessos</h1>
+                                <h1>Bebidas</h1>
                                 <fieldset>
                                     
                                     <div class="row">

@@ -8249,3 +8249,10 @@ body.md-skin {
     margin-right: -15px;
   }
 }
+
+@media(min-width: 768px){
+  .border-bottom{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
