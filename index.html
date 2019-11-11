@@ -48,7 +48,7 @@
                     <ul class="nav navbar-nav navbar-right" style="background-color: yellow;">
                         <li><a class="page-scroll" href="index.html">Registrar Pedido</a></li>
                         <li><a class="page-scroll" href="lista.html">Lista de Pedidos</a></li>
-                        <li><a class="page-scroll" href="#testimonials">Consultar Pedidos</a></li> 
+                        <li><a class="page-scroll" href="consulta.html">Consultar Pedidos</a></li> 
                     </ul>
                 </div>
             </div>
@@ -109,26 +109,13 @@
                                                     </select> 
                                                 </div>
                                             </div>
-                        
-
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="form-group" id="genero">
-                                                <label class="label-control" for="sexo_cadastro">CPF</label>
-                                                <select class="form-control m-b" name="sexo_cadastro" id="sexo_cadastro" required>
-                                                    <option value="">Selecione</option>
-                                                    <option value="3">767.655.457-54</option>
-                                                    <option value="3">987.365.576-64</option>
-                                                    <option value="3">434.345.534-54</option>
-                                                </select>
-                                            </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group" required>
-                                                    <label class="label-control" for="nome_cadastro">Nome Cliente</label>
-                                                    <input type="text" placeholder="Ex. João da Silva" class="form-control " id="nome_cadastro" name="nome_cadastro" required >
+                                                    <label class="label-control" for="quantidade">Quantidade</label>
+                                                    <input type="number" placeholder="Ex. 1,2" class="form-control " id="quantidade" name="quantidade" required >
                                                 </div>
                                             </div>
-                                        </div>
+
                                     </div>
                                 </fieldset> <!-- FIM - dados básico -->
 
@@ -136,23 +123,23 @@
                                 <fieldset>
                                     
                                     <div class="row">
-                                        <h3 class="font-bold text-uppercase text-center">Usúario de acesso</h3>
+                                        <h3 class="font-bold text-uppercase text-center">Adicionais</h3>
                                         <div class="col-sm-4">
                                             <div class="form-group">
-                                                <label for="emailUser_cadastro">Email</label>
-                                                <input type="email" placeholder="Ex. email@site.com" class="form-control"  id="emailUser_cadastro" name="emailUser_cadastro" required>
+                                                <label for="qtd_bacon">Bacon</label>
+                                                <input type="number" placeholder="Ex. 123" class="form-control"  id="qtd_bacon" name="qtd_bacon" required>
                                             </div>
                                         </div> 
                                         <div class="col-sm-4">
                                             <div class="form-group">
-                                                <label for="senha_cadastro">Senha</label>
-                                                <input type="password" placeholder="Cadastre uma senha" class="form-control"  id="senha_cadastro" name="senha_cadastro" required>
+                                                <label for="qtd_queijo">Queijo Ralado</label>
+                                                <input type="number" placeholder="Ex. 123" class="form-control"  id="qtd_queijo" name="qtd_queijo" required>
                                             </div>
                                         </div> 
                                         <div class="col-sm-4">
                                             <div class="form-group">
-                                                <label for="confSenha_cadastro">Confirma Senha</label>
-                                                <input type="password" placeholder="Confirme sua senha" class="form-control"  id="confSenha_cadastro" name="confSenha_cadastro" required>
+                                                <label for="maionese">Maionese</label>
+                                                <input type="password" placeholder="Ex. 123" class="form-control"  id="maionese" name="maionese" required>
                                             </div>
                                         </div> 
 
@@ -165,6 +152,23 @@
                                 <fieldset>
                                     <h3 class="font-bold text-uppercase text-center">Endereço</h3>
                                     <div class="row m-b-sm">
+                                            <div class="col-sm-6">
+                                                    <div class="form-group" id="genero">
+                                                        <label class="label-control" for="sexo_cadastro">CPF</label>
+                                                        <select class="form-control m-b" name="sexo_cadastro" id="sexo_cadastro" required>
+                                                            <option value="">Selecione</option>
+                                                            <option value="3">767.655.457-54</option>
+                                                            <option value="3">987.365.576-64</option>
+                                                            <option value="3">434.345.534-54</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group" required>
+                                                            <label class="label-control" for="nome_cadastro">Nome Cliente</label>
+                                                            <input type="text" placeholder="Ex. João da Silva" class="form-control " id="nome_cadastro" name="nome_cadastro" required >
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         <div class="col-sm-10">
                                             <div class="form-group">
                                                 <label for="endereco_cadastro" class="label-control">Logradouro</label>
