@@ -19,6 +19,7 @@ $(document).ready(function () {
 
 });
 
+
 var cbpAnimatedHeader = (function() {
     var docElem = document.documentElement,
             header = document.querySelector( '.navbar-default' ),
@@ -52,20 +53,3 @@ var cbpAnimatedHeader = (function() {
 
 // Activate WOW.js plugin for animation on scrol
 new WOW().init();
-
-$('#enviar-form').on('click', function(){
-    $('#fale-conosco').validate({
-        rules:{
-            nome_Interessado: {required: true, minlength: 3},
-            telefone_Interessado: {required: true, minlength: 11},
-            email_Interessado: {required: true},
-            mensagem_Interessado: {required: true, minlength: 10},
-        },
-        messages:{
-            nome_Interessado: {required: 'Preenchimento obrigatório!',minlength: 'Minímo 3 caracteres'},
-            telefone_Interessado: {required: 'Preenchimento obrigatório!', minlength: 'favor preencher o campo com o numero completo Ex: (11)99999-9999'},
-            email_Interessado: {required: 'Preenchimento obrigatório!', email:'O endereço de e-mail deve ter o formato correto "email@site.com'},
-            mensagem_Interessado: {required: 'Preenchimento obrigatório!', minlength: 'Minímo 10 caracteres'},
-        }
-    });//fecha seleção do form	
-});
